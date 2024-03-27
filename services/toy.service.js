@@ -15,21 +15,26 @@ function query(filterBy, sort) {
     // console.log('filterBy', filterBy)
     // no need - 
     // if (!filterBy&& !sort) return Promise.resolve(toys)
-
+    console.log('filterBy', filterBy)
     let filteredToys = toys
     if (filterBy.txt) {
         const regExp = new RegExp(filterBy.txt, 'i')
         filteredToys = filteredToys.filter(toy => regExp.test(toy.name))
     }
-    
+
     if (filterBy.inStock) {
         filteredToys = filteredToys.filter(toy => toy.inStock === JSON.parse(filterBy.inStock))
     }
 
-    filterBy.maxPrice = (+filterBy.maxPrice) ? +filterBy.maxPrice : Infinity
-    filterBy.minPrice = (+filterBy.minPrice) ? +filterBy.minPrice : -Infinity
+    if (filterBy.labels && filterBy.labels.length) {
+        filteredToys = filteredToys.filter(toy => filterBy.labels.every(label => toy.labels.includes(label)))
+    }
 
-    filteredToys = filteredToys.filter(toy => (toy.price <= filterBy.maxPrice) && (toy.price >= filterBy.minPrice))
+    // filterBy.maxPrice = (+filterBy.maxPrice) ? +filterBy.maxPrice : Infinity
+    // filterBy.minPrice = (+filterBy.minPrice) ? +filterBy.minPrice : -Infinity
+
+
+    // filteredToys = filteredToys.filter(toy => (toy.price <= filterBy.maxPrice) && (toy.price >= filterBy.minPrice))
 
 
     // sort either by price or by name - when sorting by string we need more 
@@ -44,20 +49,20 @@ function query(filterBy, sort) {
     //     // add date 
     // })
 
-    return Promise.resolve(filteredToys);
+    return Promise.resolve(filteredToys)
 }
 
 function getById(toyId) {
     const toy = toys.find(toy => toy._id === toyId)
     //
-    return Promise.resolve(toy);
+    return Promise.resolve(toy)
 }
 
 function remove(toyId) {
     const idx = toys.findIndex(toy => toy._id === toyId)
-    toys.splice(idx, 1);
+    toys.splice(idx, 1)
     _saveToysToFile()
-    return Promise.resolve();
+    return Promise.resolve()
 }
 
 function save(toy) {
@@ -65,25 +70,25 @@ function save(toy) {
         const idx = toys.findIndex(currToy => currToy._id === toy._id)
         toys[idx] = { ...toys[idx], ...toy }
     } else {
-        toy.createdAt = new Date(Date.now());
-        toy._id = _makeId();
-        toys.unshift(toy);
+        toy.createdAt = new Date(Date.now())
+        toy._id = _makeId()
+        toys.unshift(toy)
     }
-    _saveToysToFile();
-    return Promise.resolve(toy);
+    _saveToysToFile()
+    return Promise.resolve(toy)
 }
 
 
 
 function _makeId(length = 5) {
-    var txt = '';
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var txt = ''
+    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
     for (var i = 0; i < length; i++) {
-        txt += possible.charAt(Math.floor(Math.random() * possible.length));
+        txt += possible.charAt(Math.floor(Math.random() * possible.length))
     }
-    return txt;
+    return txt
 }
 
 function _saveToysToFile() {
-    fs.writeFileSync('data/toy.json', JSON.stringify(toys, null, 2));
+    fs.writeFileSync('data/toy.json', JSON.stringify(toys, null, 2))
 }

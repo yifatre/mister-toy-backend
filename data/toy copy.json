@@ -4,9 +4,9 @@
         "name": "Talking Doll",
         "price": 123,
         "labels": [
-            "Doll",
-            "Battery Powered",
-            "Baby"
+            "On wheels",
+            "Art",
+            "Educational"
         ],
         "createdAt": 1631031801011,
         "inStock": true
@@ -16,9 +16,10 @@
         "name": "Remote Control Car",
         "price": 79,
         "labels": [
-            "Car",
-            "Remote Control",
-            "Toy"
+            "Baby",
+            "Box game",
+            "Puzzle",
+            "Doll"
         ],
         "createdAt": 1631031801022,
         "inStock": false
@@ -28,9 +29,7 @@
         "name": "Building Blocks",
         "price": 45,
         "labels": [
-            "Building Blocks",
-            "Educational",
-            "Toy"
+            "Battery Powered"
         ],
         "createdAt": 1631031801033,
         "inStock": true
@@ -40,9 +39,9 @@
         "name": "Teddy Bear",
         "price": 55,
         "labels": [
-            "Stuffed Animal",
-            "Cuddly",
-            "Toy"
+            "Educational",
+            "Doll",
+            "Puzzle"
         ],
         "createdAt": 1631031801044,
         "inStock": true
@@ -52,9 +51,9 @@
         "name": "Toy Kitchen Set",
         "price": 89,
         "labels": [
-            "Kitchen Set",
-            "Imaginative Play",
-            "Toy"
+            "Puzzle",
+            "Educational",
+            "Doll"
         ],
         "createdAt": 1631031801055,
         "inStock": true
@@ -64,9 +63,10 @@
         "name": "Puzzle Cube",
         "price": 15,
         "labels": [
-            "Puzzle",
-            "Brain Teaser",
-            "Toy"
+            "Battery Powered",
+            "On wheels",
+            "Doll",
+            "Educational"
         ],
         "createdAt": 1631031801066,
         "inStock": true
@@ -76,10 +76,10 @@
         "name": "Art Supplies Kit",
         "price": 34,
         "labels": [
-            "Art",
-            "Craft",
-            "Creative",
-            "Toy"
+            "Doll",
+            "Baby",
+            "Box game",
+            "Educational"
         ],
         "createdAt": 1631031801077,
         "inStock": false
@@ -89,9 +89,8 @@
         "name": "Remote Control Helicopter",
         "price": 99,
         "labels": [
-            "Helicopter",
-            "Remote Control",
-            "Toy"
+            "Art",
+            "Box game"
         ],
         "createdAt": 1631031801088,
         "inStock": true
@@ -101,9 +100,9 @@
         "name": "Stuffed Penguin Plush",
         "price": 25,
         "labels": [
-            "Stuffed Animal",
-            "Soft Toy",
-            "Penguin"
+            "Art",
+            "Baby",
+            "Educational"
         ],
         "createdAt": 1631031801099,
         "inStock": true
@@ -113,9 +112,8 @@
         "name": "Musical Keyboard",
         "price": 69,
         "labels": [
-            "Musical Instrument",
-            "Keyboard",
-            "Toy"
+            "Outdoor",
+            "Doll"
         ],
         "createdAt": 1631031801100,
         "inStock": true
@@ -125,9 +123,8 @@
         "name": "Wooden Train Set",
         "price": 49,
         "labels": [
-            "Train",
-            "Wooden",
-            "Toy"
+            "Outdoor",
+            "Doll"
         ],
         "createdAt": 1631031801111,
         "inStock": true
@@ -137,9 +134,10 @@
         "name": "Dollhouse",
         "price": 159,
         "labels": [
-            "Dollhouse",
-            "Miniature",
-            "Toy"
+            "Battery Powered",
+            "Outdoor",
+            "Box game",
+            "Puzzle"
         ],
         "createdAt": 1631031801122,
         "inStock": true
@@ -149,9 +147,9 @@
         "name": "Bubble Blower",
         "price": 19,
         "labels": [
-            "Bubble",
-            "Outdoor",
-            "Toy"
+            "On wheels",
+            "Educational",
+            "Box game"
         ],
         "createdAt": 1631031801133,
         "inStock": true
@@ -161,9 +159,8 @@
         "name": "Remote Control Boat",
         "price": 89,
         "labels": [
-            "Boat",
-            "Remote Control",
-            "Toy"
+            "Battery Powered",
+            "Baby"
         ],
         "createdAt": 1631031801144,
         "inStock": true
@@ -173,10 +170,8 @@
         "name": "Building and Construction Set",
         "price": 59,
         "labels": [
-            "Building",
-            "Construction",
-            "Educational",
-            "Toy"
+            "Baby",
+            "Outdoor"
         ],
         "createdAt": 1631031801155,
         "inStock": false
@@ -186,9 +181,9 @@
         "name": "Dinosaur Figures Set",
         "price": 29,
         "labels": [
-            "Dinosaur",
-            "Figures",
-            "Toy"
+            "On wheels",
+            "Box game",
+            "Baby"
         ],
         "createdAt": 1631031801166,
         "inStock": true
@@ -198,10 +193,8 @@
         "name": "Coloring Book",
         "price": 9,
         "labels": [
-            "Coloring",
-            "Book",
-            "Creative",
-            "Toy"
+            "On wheels",
+            "Educational"
         ],
         "createdAt": 1631031801177,
         "inStock": true
@@ -211,9 +204,8 @@
         "name": "Toy Telescope",
         "price": 39,
         "labels": [
-            "Telescope",
-            "Science",
-            "Toy"
+            "Outdoor",
+            "On wheels"
         ],
         "createdAt": 1631031801188,
         "inStock": true
@@ -223,9 +215,10 @@
         "name": "Toy Doctor Kit",
         "price": 29,
         "labels": [
-            "Doctor",
-            "Medical",
-            "Toy"
+            "Puzzle",
+            "Art",
+            "Baby",
+            "On wheels"
         ],
         "createdAt": 1631031801199,
         "inStock": true
@@ -235,10 +228,9 @@
         "name": "Robot Building Kit",
         "price": 79,
         "labels": [
-            "Robot",
-            "Building",
-            "STEM",
-            "Toy"
+            "Battery Powered",
+            "Baby",
+            "Educational"
         ],
         "createdAt": 1631031801200,
         "inStock": true
