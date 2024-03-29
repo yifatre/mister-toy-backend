@@ -27,7 +27,10 @@ function query(filterBy, sort) {
     }
 
     if (filterBy.labels && filterBy.labels.length) {
-        filteredToys = filteredToys.filter(toy => filterBy.labels.every(label => toy.labels.includes(label)))
+        filteredToys = filteredToys.filter(toy => {
+            toy.labels = toy.labels.map(label => label.toLowerCase())
+            return filterBy.labels.every(label => toy.labels.includes(label.toLowerCase()))
+        })
     }
 
     // filterBy.maxPrice = (+filterBy.maxPrice) ? +filterBy.maxPrice : Infinity
